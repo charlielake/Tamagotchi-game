@@ -1,0 +1,2 @@
+Cat,46,48,98,healthy,Cat
+Dog,46,73,48,healthy,Dog

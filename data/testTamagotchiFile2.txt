@@ -1,0 +1,2 @@
+Dog,20,20,20,sick,Dog
+Dog,50,50,50,healthy,Dog

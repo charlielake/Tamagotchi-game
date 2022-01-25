@@ -1,0 +1,2 @@
+Cat,20,40,50,healthy,Cat
+Dog,50,50,60,healthy,Dog
