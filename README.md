@@ -14,6 +14,8 @@ in other ways, cleaning up after it, and other features inspired by the original
 ## Who will use it?
 I would use it along with anyone else who is interested in trying it out! 
 
+I'm sorry for how messy the file organization is - this project is about two years old now! **The code is found in src, with audio files found in data.**
+
 ## Why is this of interest to me?
 I've always been into video games, and so I believe that attempting to develop a simpler one would give me insight into 
 how these games I've played work deep down. As well, I believe that as I am interested in video games, I will be 
