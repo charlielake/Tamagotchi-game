@@ -27,19 +27,10 @@ To summarize:
 - I think this project would allow me to learn quite a bit through continuing to improve it even 
 after this course (all the features listed above).
 - I think it would be pretty fun to make!
+- If I were to continue, I would elaborate on the visuals.
 
-##User Stories
-- As a user, I want to be able to add a new pet to a list of pets (have multiple pets at once).
-- As a user, I want to be able to select what kind of pet I have.
-- As a user, I want to be able to feed my pet.
-- As a user, I want to be able to play with my pet and have multiple options for things to do.
-- As a user, I want to have my game data be saved to file when I quit the game.
-- As a user, I want to be able to load my previous game data from file when the program starts
 
-# Instructions for Grader PHASE 3
-## Note: the Main and TamagotchiApp classes are for the console-based application. Only look at GUI class for GUI.
-## Grading Instructions
-
+# Instructions to use
  - You can generate the first required event by pressing the "Add Pet" button which will allow you to add a pet to
  the list of pets.
  
@@ -66,35 +57,4 @@ after this course (all the features listed above).
  save, load, quit+save, add or remove).
  
  Thanks!
- 
- 
- # Instructions for Grader PHASE 4
- ## Grading Instructions
- ## Note: the Main and TamagotchiApp classes are for the console-based application. Please ignore them!
- ## Phase 4: Task 2
- My Pet abstract class is a superclass for both the Cat and Dog classes. Each of the subclasses override a couple 
- methods from the Pet class and implement different values to update. As well, the classes are handled differently in 
- the GUI, with each having a different default sound, and some methods having different sounds i.e. when you play with 
- a laser pointer with them, the dog is dumb and crashes into the wall, whereas the cat doesn't, which are handled by two
- different sounds based on the pet's class. Methods overridden specifically are petPet(), hugPet(), and laserPointer().
- 
-## Phase 4: Task 3
-1) My GUI originally handled everything related to the GUI as well as the audio and visual feedback. I removed
-all the sound related methods and created a new class called SoundManager which now contains them. Each GUI will 
-initialize a SoundManager, which is an object that will now handle it, improving cohesion!
 
-2) My GUI also used to handle EVERYTHING including all the panels. To increase cohesion I have made the GUI have one 
-panel containing two smaller panels - each controlling their own buttons and objects. Specifically, the ButtonPanel 
-class contains a panel with all the interactable buttons on it and the methods resulting from pushing those buttons - 
-while the PetStatusPanel contains all the status bars for pets, as well the dropDown menu allowing you to swap between 
-their statuses. PetStatusPanel also contains all the methods related to updating the fields presented here and the
-names shown in the dropDown list - so it has everything about the bars and stuff shown on that panel. Each panel also
-implements the ActionListener class and so each panel handles their own ActionEvents now and all the methods 
-associated with them.
-
-To summarize 1) separated the sound into it's own class and 2) separated the panels into their own classes, with each 
-one handling ALL the methods their components are related to. The GUI class now only initializes everything and puts the
-panels together - improving coupling (as there should in theory be a lot less dependance now). However, as the GUI 
-contains the fields the panels act on - there is still quite a bit of dependance on each other. This could be improved
-in the future. However for now, cohesion should be a lot better as GUI was split into 4 classes each having their own
-specific purposes (rather than the blob GUI I had before).
